@@ -4,10 +4,8 @@ import { useState, useEffect, useCallback } from 'react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
-import { Apple, Grape, FlagIcon as Orange, Banana } from 'lucide-react'
 import type { Card as CardType, GameState, FruitType, GameResult } from '../types/game'
 import { FRUITS, TARGET_SUM, REACTION_TIME_LIMIT, ROUND_OPTIONS, CARD_INTERVAL } from '../constants/game'
-import { stringify } from 'querystring'
 
 const generateCard = (): CardType => {
     const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana']
