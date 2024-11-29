@@ -45,7 +45,7 @@ export default function Game() {
     }
 
     const generateUniqueCard = (cards: CardType[]): CardType => {
-        const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana'];
+        const fruits: FruitType[] = ['grape', 'eggplant', 'banana', 'strawberry', 'greenApple'];
         let newCard: CardType;
 
         do {
@@ -79,7 +79,8 @@ export default function Game() {
                                     success: false,
                                     msg: "Quá 25 lá bài",
                                     bgColor: "bg-gray-100"
-                                }]
+                                }],
+                                gameStatus: 'finished',
                             };
                         }
                         const newCard = generateUniqueCard(prev.cards);
@@ -97,7 +98,7 @@ export default function Game() {
                         for (const [fruit, time] of fruitTime.entries()) {
                             if ((now - time) > REACTION_TIME_LIMIT) {
                                 let gameSt = prev.gameStatus;
-                                if (prev.currentRound === prev.totalRounds) {
+                                if (prev.currentRound >= prev.totalRounds) {
                                     gameSt = 'finished';
                                 }
                                 return {
@@ -137,7 +138,7 @@ export default function Game() {
     const clickFruit = async (selectedFruit: FruitType) => {
         setGameState(prev => {
             let gameSt = prev.gameStatus;
-            if (prev.totalRounds === prev.currentRound) {
+            if (prev.totalRounds <= prev.currentRound) {
                 gameSt = 'finished';
             }
             const now = Date.now();
@@ -243,10 +244,11 @@ export default function Game() {
 
     const renderFruitButtons = () => {
         const buttons = [
-            { fruit: 'apple', icon: 'apple' },
             { fruit: 'grape', icon: 'grape' },
-            { fruit: 'orange', icon: 'orange' },
+            { fruit: 'eggplant', icon: 'eggplant' },
             { fruit: 'banana', icon: 'banana' },
+            { fruit: 'strawberry', icon: 'strawberry' },
+            { fruit: 'greenApple', icon: 'greenApple' },
         ]
 
         return buttons.map(({ fruit, icon }) => (

@@ -1,4 +1,4 @@
-export type FruitType = 'apple' | 'grape' | 'orange' | 'banana'
+export type FruitType = 'grape' | 'eggplant' | 'banana' | 'strawberry' | 'greenApple'
 
 export interface Card {
     fruit: FruitType

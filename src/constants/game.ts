@@ -1,11 +1,20 @@
 import { FruitType } from '../types/game'
 
 export const FRUITS: Record<FruitType, string> = {
-    apple: '🍎',
+    // apple: '🍎',
+    // grape: '🍇',
+    // orange: '🍊',
+    // banana: '🍌',
     grape: '🍇',
-    orange: '🍊',
+    eggplant: '🍆',
     banana: '🍌',
+    strawberry: '🍓',
+    greenApple: '🍏',
 }
+
+/*
+Nho, cà tím, chuối, dâu, táo xanh
+*/
 
 export const ROUND_OPTIONS = [5, 10, 15]
 export const TARGET_SUM = 5
