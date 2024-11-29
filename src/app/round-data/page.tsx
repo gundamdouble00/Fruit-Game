@@ -24,7 +24,7 @@ const PlayerDataTable: React.FC<PlayerDataTableProps> = () => {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Player Data</h1>
-            {data.map((item) => (
+            {data && data.map((item: Item) => (
                 <div key={item.id} className="mb-8 bg-white shadow-md rounded-lg overflow-hidden">
                     <div className="bg-gray-100 px-4 py-2">
                         <h2 className="text-lg font-semibold">
@@ -41,12 +41,12 @@ const PlayerDataTable: React.FC<PlayerDataTableProps> = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {item.round.map((round) => (
-                                <tr key={round.round} className={`${round.bgColor} border-b`}>
-                                    <td className="px-4 py-2 text-center">{round.round}</td>
-                                    <td className="px-4 py-2 text-center">{round.fruit}</td>
-                                    <td className="px-4 py-2 text-center">{round.reactionTime}s</td>
-                                    <td className="px-4 py-2 text-center">{round.msg}</td>
+                            {item.round.map((roun: Round) => (
+                                <tr key={roun.round} className={`${roun.bgColor} border-b`}>
+                                    <td className="px-4 py-2 text-center">{roun.round}</td>
+                                    <td className="px-4 py-2 text-center">{roun.fruit}</td>
+                                    <td className="px-4 py-2 text-center">{roun.reactionTime}s</td>
+                                    <td className="px-4 py-2 text-center">{roun.msg}</td>
                                 </tr>
                             ))}
                         </tbody>
