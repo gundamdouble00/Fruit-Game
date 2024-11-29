@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
-import type { Card as CardType, GameState, FruitType, GameResult } from '../types/game'
+import type { Card as CardType, GameState, FruitType } from '../types/game'
 import { FRUITS, TARGET_SUM, REACTION_TIME_LIMIT, ROUND_OPTIONS, CARD_INTERVAL } from '../constants/game'
 
 const generateCard = (): CardType => {
@@ -62,7 +62,7 @@ export default function Game() {
 
                         const now = Date.now();
                         for (const [fruit, time] of fruitTime.entries()) {
-                            if ((now - time) / 1000 > 5) {
+                            if ((now - time) / 1000 > REACTION_TIME_LIMIT) {
                                 if (prev.currentRound === prev.totalRounds) {
                                     return {
                                         ...prev,
