@@ -3,6 +3,7 @@ export type FruitType = 'apple' | 'grape' | 'orange' | 'banana'
 export interface Card {
     fruit: FruitType
     count: number
+    time: number
 }
 
 export interface GameResult {
@@ -10,6 +11,7 @@ export interface GameResult {
     fruit: FruitType | null
     reactionTime: number | null
     success: boolean
+    msg: string
 }
 
 export interface GameState {
@@ -17,7 +19,7 @@ export interface GameState {
     totalRounds: number
     cards: Card[]
     results: GameResult[]
-    gameStatus: 'idle' | 'playing' | 'finished'
+    gameStatus: 'idle' | 'playing' | 'finished' | 'STOPPED'
     startTime: number | null
     correctFruit: FruitType | null
     lastCorrectTime: number | null
