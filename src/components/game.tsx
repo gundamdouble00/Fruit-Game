@@ -7,15 +7,15 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import type { Card as CardType, GameState, FruitType } from '../types/game'
 import { FRUITS, TARGET_SUM, REACTION_TIME_LIMIT, ROUND_OPTIONS, CARD_INTERVAL } from '../constants/game'
 
-const generateCard = (): CardType => {
-    const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana']
+// const generateCard = (cards: CardType[]): CardType => {
+//     const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana']
 
-    return {
-        fruit: fruits[Math.floor(Math.random() * fruits.length)],
-        count: Math.floor(Math.random() * 5) + 1,
-        time: Date.now(),
-    }
-}
+//     return {
+//         fruit: fruits[Math.floor(Math.random() * fruits.length)],
+//         count: Math.floor(Math.random() * 5) + 1,
+//         time: Date.now(),
+//     }
+// }
 
 export default function Game() {
     const [showRules, setShowRules] = useState(true)
@@ -44,12 +44,45 @@ export default function Game() {
         setShowRules(false)
     }
 
+    const generateUniqueCard = (cards: CardType[]): CardType => {
+        const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana'];
+        let newCard: CardType;
+
+        do {
+            newCard = {
+                fruit: fruits[Math.floor(Math.random() * fruits.length)],
+                count: Math.floor(Math.random() * 5) + 1,
+                time: Date.now(),
+            };
+        } while (cards.filter(card => card.fruit === newCard.fruit && card.count === newCard.count).length >= 2);
+
+        return newCard;
+    };
+
     useEffect(() => {
         if (gameState.gameStatus === 'playing') {
             const interval = setInterval(() => {
                 if (gameState.gameStatus === 'playing') {
-                    const newCard = generateCard()
                     setGameState(prev => {
+                        if (prev.cards.length === 25) {
+                            return {
+                                ...prev,
+                                cards: [],
+                                startTime: null,
+                                correctFruit: null,
+                                lastCorrectTime: null,
+                                currentRound: prev.currentRound + 1,
+                                results: [...prev.results, {
+                                    round: prev.currentRound,
+                                    fruit: null,
+                                    reactionTime: 5,
+                                    success: false,
+                                    msg: "Quá 25 lá bài",
+                                    bgColor: "bg-gray-100"
+                                }]
+                            };
+                        }
+                        const newCard = generateUniqueCard(prev.cards);
                         const currentCards = [...prev.cards];
                         const fruitCounts = new Map();
                         const fruitTime = new Map();
@@ -79,7 +112,8 @@ export default function Game() {
                                         fruit: fruit,
                                         reactionTime: 5,
                                         success: false,
-                                        msg: "Quá 5s sau khi xuất hiện tổng lá 5đ"
+                                        msg: "Quá 5s sau khi xuất hiện tổng lá 5đ",
+                                        bgColor: "bg-red-100"
                                     }],
                                     gameStatus: gameSt,
                                 };
@@ -116,7 +150,7 @@ export default function Game() {
                 }
             });
 
-            if (fruitCounts.get(selectedFruit) >= TARGET_SUM) {
+            if (fruitCounts.get(selectedFruit) >= TARGET_SUM && fruitTime.get(selectedFruit)) {
                 // tìm kiếm trái cây có lá bài cuối 5đ xuất hiện sớm nhất
                 let minTime = now;
                 let minFruit = null;
@@ -127,8 +161,10 @@ export default function Game() {
                     }
                 }
                 let msg = "Đúng";
+                let bgColor = "bg-green-100";
                 if (minFruit != selectedFruit) {
                     msg = "Bạn đã bỏ qua một trái cây trước đấy đủ 5đ";
+                    bgColor = "bg-yellow-100";
                 }
                 if (fruitCounts.get(selectedFruit) === TARGET_SUM) {
                     return {
@@ -143,7 +179,8 @@ export default function Game() {
                             fruit: selectedFruit,
                             reactionTime: (now - fruitTime.get(selectedFruit)) / 1000,
                             success: true,
-                            msg: msg
+                            msg: msg,
+                            bgColor: bgColor
                         }],
                         gameStatus: gameSt,
                     }
@@ -160,7 +197,8 @@ export default function Game() {
                             fruit: selectedFruit,
                             reactionTime: (now - fruitTime.get(selectedFruit)) / 1000,
                             success: false,
-                            msg: "Quá số lượng trái cây"
+                            msg: "Quá số lượng trái cây",
+                            bgColor: "bg-yellow-100"
                         }],
                         gameStatus: gameSt,
                     }
@@ -179,7 +217,8 @@ export default function Game() {
                     fruit: selectedFruit,
                     reactionTime: 5,
                     success: false,
-                    msg: "Không đúng"
+                    msg: "Không đúng",
+                    bgColor: "bg-red-100"
                 }],
                 gameStatus: gameSt,
             }
@@ -242,7 +281,10 @@ export default function Game() {
                                 <td className="p-2 border text-center">{result.round}</td>
                                 <td className="p-2 border text-center">{result.fruit ? FRUITS[result.fruit] : '-'}</td>
                                 <td className="p-2 border text-center">{result.reactionTime ? `${result.reactionTime.toFixed(3)}s` : '-'}</td>
-                                <td className={`p-2 border text-center ${result.success ? 'bg-green-100' : 'bg-red-100'}`}>
+                                {/* <td className={`p-2 border text-center ${result.success ? 'bg-green-100' : 'bg-red-100'}`}>
+                                    {result.msg}
+                                </td> */}
+                                <td className={`p-2 border text-center  ${result.bgColor}`}>
                                     {result.msg}
                                 </td>
                             </tr>

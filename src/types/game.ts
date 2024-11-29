@@ -12,6 +12,7 @@ export interface GameResult {
     reactionTime: number | null
     success: boolean
     msg: string
+    bgColor: string
 }
 
 export interface GameState {
