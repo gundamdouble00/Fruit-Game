@@ -386,7 +386,7 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
             </Button>
             <footer className="mt-8 text-center">
                 <p className="text-sm text-gray-500">
-                    &copy; {new Date().getFullYear()} zuno. All rights reserved.
+                    &copy; {new Date().getFullYear()} zunohoang. All rights reserved.
                 </p>
             </footer>
         </div>

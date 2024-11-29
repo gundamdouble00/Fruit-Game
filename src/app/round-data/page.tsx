@@ -53,6 +53,9 @@ const PlayerDataTable: React.FC<PlayerDataTableProps> = () => {
                     </table>
                 </div>
             ))}
+            <footer className="text-center text-sm text-gray-500">
+                <p>© {new Date().getFullYear()} zunohoang. All rights reserved.</p>
+            </footer>
         </div>
     );
 };
