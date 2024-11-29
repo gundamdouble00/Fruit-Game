@@ -62,7 +62,7 @@ export default function Game() {
 
                         const now = Date.now();
                         for (const [fruit, time] of fruitTime.entries()) {
-                            if ((now - time) / 1000 > REACTION_TIME_LIMIT) {
+                            if ((now - time) > REACTION_TIME_LIMIT) {
                                 if (prev.currentRound === prev.totalRounds) {
                                     return {
                                         ...prev,
