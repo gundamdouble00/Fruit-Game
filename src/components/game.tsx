@@ -63,15 +63,9 @@ export default function Game() {
                         const now = Date.now();
                         for (const [fruit, time] of fruitTime.entries()) {
                             if ((now - time) > REACTION_TIME_LIMIT) {
+                                let gameSt = prev.gameStatus;
                                 if (prev.currentRound === prev.totalRounds) {
-                                    return {
-                                        ...prev,
-                                        cards: [],
-                                        startTime: null,
-                                        correctFruit: null,
-                                        lastCorrectTime: null,
-                                        gameStatus: 'finished',
-                                    };
+                                    gameSt = 'finished';
                                 }
                                 return {
                                     ...prev,
@@ -87,6 +81,7 @@ export default function Game() {
                                         success: false,
                                         msg: "Quá 5s sau khi xuất hiện tổng lá 5đ"
                                     }],
+                                    gameStatus: gameSt,
                                 };
                             }
                         }
