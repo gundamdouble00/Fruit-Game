@@ -48,13 +48,30 @@ export default function Game() {
         const fruits: FruitType[] = ['grape', 'eggplant', 'banana', 'strawberry', 'greenApple'];
         let newCard: CardType;
 
-        do {
-            newCard = {
-                fruit: fruits[Math.floor(Math.random() * fruits.length)],
-                count: Math.floor(Math.random() * 5) + 1,
-                time: Date.now(),
-            };
-        } while (cards.filter(card => card.fruit === newCard.fruit && card.count === newCard.count).length >= 2);
+        let fullCards: CardType[] = [];
+        for (let i = 0; i < fruits.length; i++) {
+            for (let j = 1; j <= 5; j++) {
+                fullCards.push({ fruit: fruits[i], count: j, time: Date.now() });
+                fullCards.push({ fruit: fruits[i], count: j, time: Date.now() });
+            }
+        }
+
+        let remainingCards: CardType[] = [];
+        for (let i = 0; i < fullCards.length; i++) {
+            let isExist = false;
+            for (let j = 0; j < cards.length; j++) {
+                if (fullCards[i].fruit === cards[j].fruit && fullCards[i].count === cards[j].count) {
+                    isExist = true;
+                    break;
+                }
+            }
+            if (!isExist) {
+                remainingCards.push(fullCards[i]);
+            }
+        }
+
+        newCard = remainingCards[Math.floor(Math.random() * remainingCards.length)];
+        newCard.time = Date.now();
 
         return newCard;
     };
@@ -64,7 +81,12 @@ export default function Game() {
             const interval = setInterval(() => {
                 if (gameState.gameStatus === 'playing') {
                     setGameState(prev => {
+                        let gameSt = prev.gameStatus;
+                        if (prev.currentRound >= prev.totalRounds) {
+                            gameSt = 'finished';
+                        }
                         if (prev.cards.length === 25) {
+
                             return {
                                 ...prev,
                                 cards: [],
@@ -80,7 +102,7 @@ export default function Game() {
                                     msg: "Quá 25 lá bài",
                                     bgColor: "bg-gray-100"
                                 }],
-                                gameStatus: 'finished',
+                                gameStatus: gameSt
                             };
                         }
                         const newCard = generateUniqueCard(prev.cards);
@@ -97,10 +119,6 @@ export default function Game() {
                         const now = Date.now();
                         for (const [fruit, time] of fruitTime.entries()) {
                             if ((now - time) > REACTION_TIME_LIMIT) {
-                                let gameSt = prev.gameStatus;
-                                if (prev.currentRound >= prev.totalRounds) {
-                                    gameSt = 'finished';
-                                }
                                 return {
                                     ...prev,
                                     cards: [],
