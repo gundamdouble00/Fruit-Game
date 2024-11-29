@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Dispatch, SetStateAction, useCallback } from 'react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
@@ -323,15 +323,15 @@ export default function Game() {
     )
 }
 
-const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setShowRules: any }) => {
+const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setShowRules: Dispatch<SetStateAction<boolean>> }) => {
 
-    const saveData = async () => {
+    const saveData = useCallback(async () => {
         const dataRounds = {
             round: gameState.results
         }
 
         try {
-            const res: any = await fetch('/api/rounds', {
+            const res = await fetch('/api/rounds', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -346,15 +346,13 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
                 console.log('fail save data');
             }
         } catch (error) {
-            console.log(error);
+            console.error('Error saving data:', error);
         }
-    }
+    }, [gameState.results]);
 
     useEffect(() => {
-        if (gameState.gameStatus === 'finished') {
-            saveData();
-        }
-    }, [gameState.gameStatus]);
+        saveData();
+    }, [saveData]);
 
     return (
         <div className="w-full max-w-2xl mx-auto mt-8">

@@ -19,7 +19,7 @@ export async function POST(request: Request) {
         try {
             const fileContent = await fs.readFile(filePath, 'utf8')
             existingData = JSON.parse(fileContent)
-        } catch (error) {
+        } catch {
             // If file doesn't exist or is empty, start with empty array
             existingData = []
         }
@@ -35,8 +35,7 @@ export async function POST(request: Request) {
         await fs.writeFile(filePath, JSON.stringify(existingData, null, 2))
 
         return NextResponse.json({ success: true })
-    } catch (error) {
-        console.error('Error saving data:', error)
+    } catch {
         return NextResponse.json({ success: false, error: "ERROR" }, { status: 500 })
     }
 }
