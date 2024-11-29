@@ -310,9 +310,14 @@ export default function Game() {
                         ))}
                     </tbody>
                 </table>
-                <Button onClick={() => setShowRules(true)} className="mt-4">
+                <Button onClick={() => setShowRules(true)} className="mt-1 bg-sky-600 text-white hover:bg-sky-500">
                     Chơi lại
                 </Button>
+                <footer className="mt-8 text-center">
+                    <p className="text-sm text-gray-500">
+                        &copy; {new Date().getFullYear()} zuno. All rights reserved.
+                    </p>
+                </footer>
             </div>
         )
     }
