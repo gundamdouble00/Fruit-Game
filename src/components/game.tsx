@@ -7,18 +7,10 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import type { Card as CardType, GameState, FruitType } from '../types/game'
 import { FRUITS, TARGET_SUM, REACTION_TIME_LIMIT, ROUND_OPTIONS, CARD_INTERVAL } from '../constants/game'
 
-// const generateCard = (cards: CardType[]): CardType => {
-//     const fruits: FruitType[] = ['apple', 'grape', 'orange', 'banana']
-
-//     return {
-//         fruit: fruits[Math.floor(Math.random() * fruits.length)],
-//         count: Math.floor(Math.random() * 5) + 1,
-//         time: Date.now(),
-//     }
-// }
-
 export default function Game() {
     const [showRules, setShowRules] = useState(true)
+    const [showNotification, setShowNotification] = useState(false)
+    const [showRoundNotification, setShowRoundNotification] = useState(false)
     const [gameState, setGameState] = useState<GameState>({
         currentRound: 0,
         totalRounds: 5,
@@ -76,7 +68,7 @@ export default function Game() {
     };
 
     useEffect(() => {
-        if (gameState.gameStatus === 'playing') {
+        if (gameState.gameStatus === 'playing' && !showRoundNotification) {
             const interval = setInterval(() => {
                 if (gameState.gameStatus === 'playing') {
                     setGameState(prev => {
@@ -85,7 +77,6 @@ export default function Game() {
                             gameSt = 'finished';
                         }
                         if (prev.cards.length === 25) {
-
                             return {
                                 ...prev,
                                 cards: [],
@@ -148,9 +139,7 @@ export default function Game() {
 
             return () => clearInterval(interval)
         }
-    }, [gameState.gameStatus]);
-
-
+    }, [gameState.gameStatus, showRoundNotification]);
 
     const clickFruit = async (selectedFruit: FruitType) => {
         setGameState(prev => {
@@ -168,8 +157,12 @@ export default function Game() {
                 }
             });
 
+            let reactionTime = 5;
+            let success = false;
+            let msg = "Không đúng";
+            let bgColor = "bg-red-100";
+
             if (fruitCounts.get(selectedFruit) >= TARGET_SUM && fruitTime.get(selectedFruit)) {
-                // tìm kiếm trái cây có lá bài cuối 5đ xuất hiện sớm nhất
                 let minTime = now;
                 let minFruit = null;
                 for (const [fruit, time] of fruitTime.entries()) {
@@ -178,52 +171,23 @@ export default function Game() {
                         minFruit = fruit;
                     }
                 }
-                let msg = "Đúng";
-                let bgColor = "bg-green-100";
+                msg = "Đúng";
+                bgColor = "bg-green-100";
                 if (minFruit != selectedFruit) {
                     msg = "Bạn đã bỏ qua một trái cây trước đấy đủ 5đ";
                     bgColor = "bg-yellow-100";
                 }
                 if (fruitCounts.get(selectedFruit) === TARGET_SUM) {
-                    return {
-                        ...prev,
-                        cards: [],
-                        startTime: null,
-                        correctFruit: null,
-                        lastCorrectTime: null,
-                        currentRound: prev.currentRound + 1,
-                        results: [...prev.results, {
-                            round: prev.currentRound,
-                            fruit: selectedFruit,
-                            reactionTime: (now - fruitTime.get(selectedFruit)) / 1000,
-                            success: true,
-                            msg: msg,
-                            bgColor: bgColor
-                        }],
-                        gameStatus: gameSt,
-                    }
+                    reactionTime = (now - fruitTime.get(selectedFruit)) / 1000;
+                    success = true;
                 } else {
-                    return {
-                        ...prev,
-                        cards: [],
-                        startTime: null,
-                        correctFruit: null,
-                        lastCorrectTime: null,
-                        currentRound: prev.currentRound + 1,
-                        results: [...prev.results, {
-                            round: prev.currentRound,
-                            fruit: selectedFruit,
-                            reactionTime: (now - fruitTime.get(selectedFruit)) / 1000,
-                            success: false,
-                            msg: "Quá số lượng trái cây",
-                            bgColor: "bg-yellow-100"
-                        }],
-                        gameStatus: gameSt,
-                    }
+                    msg = "Quá số lượng trái cây";
+                    bgColor = "bg-yellow-100";
                 }
             }
 
-            return {
+
+            const newState = {
                 ...prev,
                 cards: [],
                 startTime: null,
@@ -233,17 +197,22 @@ export default function Game() {
                 results: [...prev.results, {
                     round: prev.currentRound,
                     fruit: selectedFruit,
-                    reactionTime: 5,
-                    success: false,
-                    msg: "Không đúng",
-                    bgColor: "bg-red-100"
+                    reactionTime: reactionTime,
+                    success: success,
+                    msg: msg,
+                    bgColor: bgColor
                 }],
                 gameStatus: gameSt,
+            };
+
+            // Hiển thị thông báo sau mỗi lượt
+            if (newState.currentRound <= newState.totalRounds) {
+                setShowRoundNotification(true);
             }
+
+            return newState;
         })
     }
-
-
 
     const renderCards = () => {
         return gameState.cards.map((card, index) => (
@@ -281,47 +250,6 @@ export default function Game() {
         ))
     }
 
-    const renderResults = () => {
-        return (
-            <div className="w-full max-w-2xl mx-auto mt-8">
-                <h2 className="text-2xl font-bold mb-4">TỔNG HỢP KẾT QUẢ</h2>
-                <table className="w-full border-collapse">
-                    <thead>
-                        <tr className="bg-gray-100">
-                            <th className="p-2 border">Lượt chơi</th>
-                            <th className="p-2 border">Loại trái cây</th>
-                            <th className="p-2 border">Thời gian phản ứng</th>
-                            <th className="p-2 border">Đạt yêu cầu</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {gameState.results.map((result, index) => (
-                            <tr key={index}>
-                                <td className="p-2 border text-center">{result.round}</td>
-                                <td className="p-2 border text-center">{result.fruit ? FRUITS[result.fruit] : '-'}</td>
-                                <td className="p-2 border text-center">{result.reactionTime ? `${result.reactionTime.toFixed(3)}s` : '-'}</td>
-                                {/* <td className={`p-2 border text-center ${result.success ? 'bg-green-100' : 'bg-red-100'}`}>
-                                    {result.msg}
-                                </td> */}
-                                <td className={`p-2 border text-center  ${result.bgColor}`}>
-                                    {result.msg}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                <Button onClick={() => setShowRules(true)} className="mt-1 bg-sky-600 text-white hover:bg-sky-500">
-                    Chơi lại
-                </Button>
-                <footer className="mt-8 text-center">
-                    <p className="text-sm text-gray-500">
-                        &copy; {new Date().getFullYear()} zuno. All rights reserved.
-                    </p>
-                </footer>
-            </div>
-        )
-    }
-
     return (
         <div className="min-h-screen bg-gray-50 p-8">
             <Dialog open={showRules} onOpenChange={setShowRules}>
@@ -343,7 +271,40 @@ export default function Game() {
                 </DialogContent>
             </Dialog>
 
-            {gameState.gameStatus === 'playing' && (
+            <Dialog open={showNotification} onOpenChange={setShowNotification}>
+                <DialogContent>
+                    <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-4">Kết thúc 2 lượt</h2>
+                        <p className="mb-4">
+                            Bạn đã hoàn thành 2 lượt chơi. Hãy chuẩn bị cho 2 lượt tiếp theo!
+                        </p>
+                        <Button onClick={() => setShowNotification(false)}>
+                            Tiếp tục
+                        </Button>
+                    </div>
+                </DialogContent>
+            </Dialog>
+
+            <Dialog open={showRoundNotification} onOpenChange={setShowRoundNotification}>
+                <DialogContent>
+                    <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-4">Kết thúc lượt {gameState.currentRound - 1}</h2>
+                        <p className="mb-4">
+                            Bạn đã hoàn thành lượt chơi. Hãy chuẩn bị cho lượt tiếp theo!
+                        </p>
+                        <Button onClick={() => {
+                            setShowRoundNotification(false);
+                            if (gameState.currentRound > gameState.totalRounds) {
+                                setGameState(prev => ({ ...prev, gameStatus: 'finished' }));
+                            }
+                        }}>
+                            {gameState.currentRound > gameState.totalRounds ? 'Xem kết quả' : 'Lượt tiếp theo'}
+                        </Button>
+                    </div>
+                </DialogContent>
+            </Dialog>
+
+            {gameState.gameStatus === 'playing' && !showRoundNotification && (
                 <div className="flex flex-col items-center gap-8">
                     <div className="text-xl font-bold">
                         Lượt {gameState.currentRound}/{gameState.totalRounds}
@@ -357,88 +318,78 @@ export default function Game() {
                 </div>
             )}
 
-            {gameState.gameStatus === 'finished' && renderResults()}
+            {gameState.gameStatus === 'finished' && <RenderResults gameState={gameState} setShowRules={setShowRules} />}
         </div>
     )
 }
 
+const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setShowRules: any }) => {
 
+    const saveData = async () => {
+        const dataRounds = {
+            round: gameState.results
+        }
 
-// const dealNextCard = useCallback(() => {
-//     if (gameState.gameStatus !== 'playing') return
+        try {
+            const res: any = await fetch('/api/rounds', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(dataRounds),
+            });
 
-//     const newCard = generateCard()
-//     setGameState(prev => {
-//         const newCards = [...prev.cards, newCard]
-//         const fruitCounts: Record<FruitType, number> = { apple: 0, grape: 0, orange: 0, banana: 0 }
-//         newCards.forEach(card => {
-//             fruitCounts[card.fruit] += card.count
-//         })
+            console.log(res);
+            if (res.status === 201) {
+                console.log('save data success');
+            } else {
+                console.log('fail save data');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
-//         const correctFruit = Object.entries(fruitCounts).find(([_, count]) => count === TARGET_SUM)?.[0] as FruitType | undefined
+    useEffect(() => {
+        if (gameState.gameStatus === 'finished') {
+            saveData();
+        }
+    }, [gameState.gameStatus]);
 
-//         return {
-//             ...prev,
-//             cards: newCards,
-//             startTime: correctFruit && !prev.correctFruit ? Date.now() : prev.startTime,
-//             correctFruit: correctFruit || prev.correctFruit,
-//             lastCorrectTime: correctFruit && !prev.correctFruit ? Date.now() : prev.lastCorrectTime,
-//         }
-//     })
-// }, [gameState.gameStatus])
+    return (
+        <div className="w-full max-w-2xl mx-auto mt-8">
+            <h2 className="text-2xl font-bold mb-4">TỔNG HỢP KẾT QUẢ</h2>
+            <table className="w-full border-collapse">
+                <thead>
+                    <tr className="bg-gray-100">
+                        <th className="p-2 border">Lượt chơi</th>
+                        <th className="p-2 border">Loại trái cây</th>
+                        <th className="p-2 border">Thời gian phản ứng</th>
+                        <th className="p-2 border">Đạt yêu cầu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {gameState.results.map((result, index) => (
+                        <tr key={index}>
+                            <td className="p-2 border text-center">{result.round}</td>
+                            <td className="p-2 border text-center">{result.fruit ? FRUITS[result.fruit] : '-'}</td>
+                            <td className="p-2 border text-center">{result.reactionTime ? `${result.reactionTime.toFixed(3)}s` : '-'}</td>
+                            <td className={`p-2 border text-center ${result.bgColor}`}>
+                                {result.msg}
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+            <Button onClick={() => setShowRules(true)} className="mt-4 bg-sky-600 text-white hover:bg-sky-500">
+                Chơi lại
+            </Button>
+            <footer className="mt-8 text-center">
+                <p className="text-sm text-gray-500">
+                    &copy; {new Date().getFullYear()} zuno. All rights reserved.
+                </p>
+            </footer>
+        </div>
+    )
+}
 
-// const checkAndCollectCards = useCallback((selectedFruit: FruitType | null) => {
-//     if (!gameState.correctFruit || !gameState.startTime || !gameState.lastCorrectTime) return
-
-//     const now = Date.now()
-//     const reactionTime = (now - gameState.lastCorrectTime) / 1000
-//     let success = false
-
-//     if (selectedFruit === gameState.correctFruit && reactionTime <= 5) {
-//         success = true
-//     }
-
-//     const result: GameResult = {
-//         round: gameState.currentRound,
-//         fruit: gameState.correctFruit,
-//         reactionTime: success ? reactionTime : null,
-//         success,
-//     }
-
-//     const nextRound = gameState.currentRound + 1
-//     const nextGameStatus = nextRound > gameState.totalRounds ? 'finished' : 'playing'
-
-//     setGameState(prev => ({
-//         ...prev,
-//         currentRound: nextRound,
-//         cards: [],
-//         results: [...prev.results, result],
-//         gameStatus: nextGameStatus,
-//         startTime: null,
-//         correctFruit: null,
-//         lastCorrectTime: null,
-//     }))
-// }, [gameState])
-
-// useEffect(() => {
-//     if (gameState.gameStatus === 'playing') {
-//         const interval = setInterval(dealNextCard, CARD_INTERVAL)
-//         return () => clearInterval(interval)
-//     }
-// }, [gameState.gameStatus, dealNextCard])
-
-// useEffect(() => {
-//     if (gameState.correctFruit && gameState.lastCorrectTime) {
-//         const timeout = setTimeout(() => {
-//             checkAndCollectCards(null)
-//         }, REACTION_TIME_LIMIT)
-//         return () => clearTimeout(timeout)
-//     }
-// }, [gameState.correctFruit, gameState.lastCorrectTime, checkAndCollectCards])
-
-
-/*
-
-
-
-*/
