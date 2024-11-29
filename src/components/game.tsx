@@ -46,9 +46,8 @@ export default function Game() {
 
     const generateUniqueCard = (cards: CardType[]): CardType => {
         const fruits: FruitType[] = ['grape', 'eggplant', 'banana', 'strawberry', 'greenApple'];
-        let newCard: CardType;
 
-        let fullCards: CardType[] = [];
+        const fullCards: CardType[] = [];
         for (let i = 0; i < fruits.length; i++) {
             for (let j = 1; j <= 5; j++) {
                 fullCards.push({ fruit: fruits[i], count: j, time: Date.now() });
@@ -56,7 +55,7 @@ export default function Game() {
             }
         }
 
-        let remainingCards: CardType[] = [];
+        const remainingCards: CardType[] = [];
         for (let i = 0; i < fullCards.length; i++) {
             let isExist = false;
             for (let j = 0; j < cards.length; j++) {
@@ -70,7 +69,7 @@ export default function Game() {
             }
         }
 
-        newCard = remainingCards[Math.floor(Math.random() * remainingCards.length)];
+        const newCard: CardType = remainingCards[Math.floor(Math.random() * remainingCards.length)];
         newCard.time = Date.now();
 
         return newCard;
