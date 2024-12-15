@@ -3,9 +3,10 @@
 import { useState, useEffect, Dispatch, SetStateAction, useCallback } from 'react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogTitle,  } from '@/components/ui/dialog'
 import type { Card as CardType, GameState, FruitType } from '../types/game'
 import { FRUITS, TARGET_SUM, REACTION_TIME_LIMIT, ROUND_OPTIONS, CARD_INTERVAL } from '../constants/game'
+import Image from 'next/image'
 
 export default function Game() {
     const [showRules, setShowRules] = useState(true)
@@ -76,7 +77,7 @@ export default function Game() {
                         if (prev.currentRound >= prev.totalRounds) {
                             gameSt = 'finished';
                         }
-                        if (prev.cards.length === 25) {
+                        if (prev.cards.length === 20) {
                             return {
                                 ...prev,
                                 cards: [],
@@ -87,9 +88,9 @@ export default function Game() {
                                 results: [...prev.results, {
                                     round: prev.currentRound,
                                     fruit: null,
-                                    reactionTime: 5,
+                                    reactionTime: 3,
                                     success: false,
-                                    msg: "Quá 25 lá bài",
+                                    msg: "Quá 20 lá bài",
                                     bgColor: "bg-gray-100"
                                 }],
                                 gameStatus: gameSt
@@ -119,9 +120,9 @@ export default function Game() {
                                     results: [...prev.results, {
                                         round: prev.currentRound,
                                         fruit: fruit,
-                                        reactionTime: 5,
+                                        reactionTime: 3,
                                         success: false,
-                                        msg: "Quá 5s sau khi xuất hiện tổng lá 5đ",
+                                        msg: "Bạn đã hết thời gian phản ứng",
                                         bgColor: "bg-red-100"
                                     }],
                                     gameStatus: gameSt,
@@ -157,9 +158,9 @@ export default function Game() {
                 }
             });
 
-            let reactionTime = 5;
+            let reactionTime = (now - fruitTime.get(selectedFruit)) / 1000;
             let success = false;
-            let msg = "Không đúng";
+            let msg = "Hong đúng Fruit nha";
             let bgColor = "bg-red-100";
 
             if (fruitCounts.get(selectedFruit) >= TARGET_SUM && fruitTime.get(selectedFruit)) {
@@ -171,10 +172,11 @@ export default function Game() {
                         minFruit = fruit;
                     }
                 }
+
                 msg = "Đúng";
                 bgColor = "bg-green-100";
                 if (minFruit != selectedFruit) {
-                    msg = "Bạn đã bỏ qua một trái cây trước đấy đủ 5đ";
+                    msg = "Bạn đã bỏ lỡ 1 trái cây đã đủ 5 quả trước đó";
                     bgColor = "bg-yellow-100";
                 }
                 if (fruitCounts.get(selectedFruit) === TARGET_SUM) {
@@ -185,7 +187,6 @@ export default function Game() {
                     bgColor = "bg-yellow-100";
                 }
             }
-
 
             const newState = {
                 ...prev,
@@ -209,24 +210,80 @@ export default function Game() {
             if (newState.currentRound <= newState.totalRounds) {
                 setShowRoundNotification(true);
             }
-
             return newState;
         })
     }
 
     const renderCards = () => {
         return gameState.cards.map((card, index) => (
-            <Card key={index} className="w-24 h-36 flex items-center justify-center">
-                <div className="text-center">
-                    <div className="flex flex-wrap justify-center">
-                        {Array.from({ length: card.count }).map((_, i) => (
-                            <div key={i} className="text-2xl mx-1">{FRUITS[card.fruit]}</div>
-                        ))}
-                    </div>
-                </div>
+            <Card key={index} className="w-20 h-28 relative">
+                {Array.from({ length: card.count }).map((_, i) => {
+                    let positionStyles = {};
+                    let size = "90%"; // Kích thước mặc định cho 1 trái cây
+    
+                    switch (card.count) {
+                        case 1: // Trái cây lớn nhất, nằm giữa
+                            positionStyles = { top: "50%", left: "50%", transform: "translate(-50%, -50%)" };
+                            size = "100%";
+                            break;
+    
+                        case 2: // Hai trái cây chéo
+                            positionStyles = [
+                                { top: "25%", left: "18%", transform: "translateY(-25%)" },
+                                { top: "75%", left: "50%", transform: "translateY(-75%)" },
+                            ][i];
+                            size = "100%";
+                            break;
+    
+                        case 3: // Ba trái cây: 1 trên, 2 dưới
+                            positionStyles = [
+                                { top: "9%", left: "10%", transform: "translateX(-50%), translateY(-20%)" },
+                                { top: "39%", left: "35%", transform: "translateX(-40%), translateY(-40%)" },
+                                { top: "69%", left: "60%", transform: "translateX(-30%), translateY(-60%)" },
+                            ][i];
+                            size = "90%";
+                            break;
+    
+                        case 4: // Giữ nguyên hình vuông
+                            positionStyles = [
+                                { top: "20%", left: "10%" },
+                                { top: "20%", left: "58%" },
+                                { top: "60%", left: "10%" },
+                                { top: "60%", left: "58%" },
+                            ][i];
+                            size = "90%";
+                            break;
+    
+                        case 5: // 4 trái cây vuông + 1 ở giữa
+                            positionStyles = [
+                                { top: "10%", left: "10%" },
+                                { top: "10%", left: "60%" },
+                                { top: "40%", left: "35%" },
+                                { top: "70%", left: "10%" },
+                                { top: "70%", left: "60%" },
+                            ][i];
+                            size = "90%";
+                            break;
+                    }
+    
+                    return (
+                        <div key={i} className="absolute" style={{ ...positionStyles }}>
+                            <Image
+                                src={FRUITS[card.fruit]}
+                                alt={card.fruit}
+                                width={32}
+                                height={32}
+                                style={{ width: size, height: size }}
+                            />
+                        </div>
+                    );
+                })}
             </Card>
-        ))
-    }
+        ));
+    };
+    
+    
+    
 
     const renderFruitButtons = () => {
         const buttons = [
@@ -241,24 +298,36 @@ export default function Game() {
             <Button
                 key={fruit}
                 onClick={() => clickFruit(fruit as FruitType)}
-                className="p-4"
+                // className="p-4"
+                className="w-14 h-14 bg-teal-50 rounded-lg shadow-md flex flex-col items-center justify-center hover:bg-teal-100"
                 variant="outline"
             >
-                <div className="text-4xl mb-2">{FRUITS[icon as FruitType]}</div>
+                <div className="flex items-center justify-center">
+                    <Image 
+                        src={FRUITS[icon as FruitType]}  // Đường dẫn ảnh
+                        alt={fruit}  // Mô tả ảnh
+                        width={32}   // Đặt chiều rộng của ảnh
+                        height={32}  // Đặt chiều cao của ảnh
+                    />
+                </div>
                 <span className="sr-only">{fruit}</span>
             </Button>
-        ))
+        ));
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 p-8">
+        <div className="min-h-screen bg-gray-50 p-4">
             <Dialog open={showRules} onOpenChange={setShowRules}>
                 <DialogContent>
+                    <DialogTitle></DialogTitle> {/* Thêm thành phần này */}
                     <div className="p-6">
-                        <h2 className="text-2xl font-bold mb-4">Luật chơi</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-center">Luật chơi</h2>
                         <p className="mb-4">
-                            Đếm tổng số trái cây trên các thẻ bài và bấm nút khi tổng số trái cây cùng loại bằng 5.
-                            Bạn có 5 giây để phản ứng với mỗi lượt. Mỗi giây sẽ có một lá bài mới được phát ra.
+                            Màn hình sẽ hiển thị lần lượt các thẻ bài trái cây 🍏🍓🍆🍌🍇,
+                            mỗi thẻ chứa một loại trái cây và số lượng của loại trái cây đó (1 quả nho, 2 quả táo, 3 quả chuối,...).
+                            Bạn sẽ chọn ngay lập tức loại trái cây mà tổng số lượng của chúng trên các thẻ bài là 5, 
+                            nếu như có nhiều loại trái cây có số lượng là 5 thì bạn phải chọn loại trái cây xuất 
+                            hiện đầu tiên nhaa.
                         </p>
                         <div className="flex gap-4 justify-center">
                             {ROUND_OPTIONS.map(rounds => (
@@ -273,6 +342,7 @@ export default function Game() {
 
             <Dialog open={showNotification} onOpenChange={setShowNotification}>
                 <DialogContent>
+                    <DialogTitle></DialogTitle>
                     <div className="p-6">
                         <h2 className="text-2xl font-bold mb-4">Kết thúc 2 lượt</h2>
                         <p className="mb-4">
@@ -287,6 +357,7 @@ export default function Game() {
 
             <Dialog open={showRoundNotification} onOpenChange={setShowRoundNotification}>
                 <DialogContent>
+                    <DialogTitle></DialogTitle>
                     <div className="p-6">
                         <h2 className="text-2xl font-bold mb-4">Kết thúc lượt {gameState.currentRound - 1}</h2>
                         <p className="mb-4">
@@ -305,15 +376,18 @@ export default function Game() {
             </Dialog>
 
             {gameState.gameStatus === 'playing' && !showRoundNotification && (
-                <div className="flex flex-col items-center gap-8">
-                    <div className="text-xl font-bold">
-                        Lượt {gameState.currentRound}/{gameState.totalRounds}
+                <div className="flex flex-col top-0 items-center gap-8 w-full">
+                    <div className="w-full sm:w-[450px] h-auto sm:h-[600px] overflow-y-auto border border-gray-300 p-4 rounded-md">
+                        <div className="flex flex-wrap gap-4 justify-center max-w-3xl">
+                            {renderCards()}
+                        </div>
                     </div>
-                    <div className="flex gap-4">
+                    
+                    <div className="fixed bottom-8 flex gap-4 bg-white p-2 shadow-lg rounded-md">
+                        <div className="text-base top-0 mt-4">
+                            Lượt {gameState.currentRound}/{gameState.totalRounds}
+                        </div>
                         {renderFruitButtons()}
-                    </div>
-                    <div className="flex flex-wrap gap-4 justify-center max-w-3xl">
-                        {renderCards()}
                     </div>
                 </div>
             )}
@@ -324,7 +398,6 @@ export default function Game() {
 }
 
 const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setShowRules: Dispatch<SetStateAction<boolean>> }) => {
-
     const saveData = useCallback(async () => {
         const dataRounds = {
             round: gameState.results
@@ -361,17 +434,29 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
                 <thead>
                     <tr className="bg-gray-100">
                         <th className="p-2 border">Lượt chơi</th>
-                        <th className="p-2 border">Loại trái cây</th>
+                        <th className="p-2 border">Fruit đúng</th>
                         <th className="p-2 border">Thời gian phản ứng</th>
-                        <th className="p-2 border">Đạt yêu cầu</th>
+                        <th className="p-2 border">Kết quả của mỗi lượt chơi</th>
                     </tr>
                 </thead>
                 <tbody>
                     {gameState.results.map((result, index) => (
                         <tr key={index}>
                             <td className="p-2 border text-center">{result.round}</td>
-                            <td className="p-2 border text-center">{result.fruit ? FRUITS[result.fruit] : '-'}</td>
-                            <td className="p-2 border text-center">{result.reactionTime ? `${result.reactionTime.toFixed(3)}s` : '-'}</td>
+                            <td className="p-2 border text-center">
+                                {result.fruit ? (
+                                    <Image
+                                        src={FRUITS[result.fruit]} 
+                                        alt="Fruit"
+                                        width={32} 
+                                        height={32} 
+                                        className="inline-block object-contain"
+                                    />
+                                ): '-'}
+                            </td>
+                            <td className="p-2 border text-center">
+                                {result.reactionTime ? `${result.reactionTime.toFixed(3)}s` : '-'}
+                            </td>
                             <td className={`p-2 border text-center ${result.bgColor}`}>
                                 {result.msg}
                             </td>
@@ -379,9 +464,11 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
                     ))}
                 </tbody>
             </table>
+
             <Button onClick={() => setShowRules(true)} className="mt-4 bg-sky-600 text-white hover:bg-sky-500">
                 Chơi lại
             </Button>
+
             <footer className="mt-8 text-center">
                 <p className="text-sm text-gray-500">
                     &copy; {new Date().getFullYear()} zunohoang. All rights reserved.
