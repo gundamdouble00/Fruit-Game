@@ -25,3 +25,23 @@ body {
   background: var(--background);
   font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+
+  .card {
+    width: 90% !important; 
+    height: auto !important;
+  }
+
+  .card img {
+      width: 80% !important; /* Thu nhỏ kích thước trái cây */
+      height: auto !important;
+  }
+}

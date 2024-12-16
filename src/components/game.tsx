@@ -84,11 +84,11 @@ export default function Game() {
                                 startTime: null,
                                 correctFruit: null,
                                 lastCorrectTime: null,
-                                currentRound: prev.currentRound + 1,
+                                currentRound: prev.currentRound,
                                 results: [...prev.results, {
                                     round: prev.currentRound,
                                     fruit: null,
-                                    reactionTime: 3,
+                                    reactionTime: REACTION_TIME_LIMIT,
                                     success: false,
                                     msg: "Quá 20 lá bài",
                                     bgColor: "bg-gray-100"
@@ -120,9 +120,9 @@ export default function Game() {
                                     results: [...prev.results, {
                                         round: prev.currentRound,
                                         fruit: fruit,
-                                        reactionTime: 3,
+                                        reactionTime: 5,
                                         success: false,
-                                        msg: "Bạn đã hết thời gian phản ứng",
+                                        msg: "Quá 5s sau khi xuất hiện tổng lá 5đ",
                                         bgColor: "bg-red-100"
                                     }],
                                     gameStatus: gameSt,
@@ -148,6 +148,7 @@ export default function Game() {
             if (prev.totalRounds <= prev.currentRound) {
                 gameSt = 'finished';
             }
+
             const now = Date.now();
             const fruitCounts = new Map();
             const fruitTime = new Map();
@@ -160,7 +161,7 @@ export default function Game() {
 
             let reactionTime = (now - fruitTime.get(selectedFruit)) / 1000;
             let success = false;
-            let msg = "Hong đúng Fruit nha";
+            let msg = "Không đúng";
             let bgColor = "bg-red-100";
 
             if (fruitCounts.get(selectedFruit) >= TARGET_SUM && fruitTime.get(selectedFruit)) {
@@ -176,7 +177,7 @@ export default function Game() {
                 msg = "Đúng";
                 bgColor = "bg-green-100";
                 if (minFruit != selectedFruit) {
-                    msg = "Bạn đã bỏ lỡ 1 trái cây đã đủ 5 quả trước đó";
+                    msg = "Bạn đã bỏ qua một trái cây trước đấy đã đủ 5đ";
                     bgColor = "bg-yellow-100";
                 }
                 if (fruitCounts.get(selectedFruit) === TARGET_SUM) {
@@ -219,15 +220,16 @@ export default function Game() {
             <Card key={index} className="w-20 h-28 relative">
                 {Array.from({ length: card.count }).map((_, i) => {
                     let positionStyles = {};
-                    let size = "90%"; // Kích thước mặc định cho 1 trái cây
+                    let size = "100%"; // Kích thước mặc định cho 1 trái cây
     
+                    // Sử dụng vw và vh cho các vị trí và kích thước linh hoạt
                     switch (card.count) {
-                        case 1: // Trái cây lớn nhất, nằm giữa
+                        case 1:
                             positionStyles = { top: "50%", left: "50%", transform: "translate(-50%, -50%)" };
                             size = "100%";
                             break;
     
-                        case 2: // Hai trái cây chéo
+                        case 2:
                             positionStyles = [
                                 { top: "25%", left: "18%", transform: "translateY(-25%)" },
                                 { top: "75%", left: "50%", transform: "translateY(-75%)" },
@@ -235,7 +237,7 @@ export default function Game() {
                             size = "100%";
                             break;
     
-                        case 3: // Ba trái cây: 1 trên, 2 dưới
+                        case 3:
                             positionStyles = [
                                 { top: "9%", left: "10%", transform: "translateX(-50%), translateY(-20%)" },
                                 { top: "39%", left: "35%", transform: "translateX(-40%), translateY(-40%)" },
@@ -244,7 +246,7 @@ export default function Game() {
                             size = "90%";
                             break;
     
-                        case 4: // Giữ nguyên hình vuông
+                        case 4:
                             positionStyles = [
                                 { top: "20%", left: "10%" },
                                 { top: "20%", left: "58%" },
@@ -254,7 +256,7 @@ export default function Game() {
                             size = "90%";
                             break;
     
-                        case 5: // 4 trái cây vuông + 1 ở giữa
+                        case 5:
                             positionStyles = [
                                 { top: "10%", left: "10%" },
                                 { top: "10%", left: "60%" },
@@ -274,6 +276,7 @@ export default function Game() {
                                 width={32}
                                 height={32}
                                 style={{ width: size, height: size }}
+                                className="flex-grow flex-shrink"
                             />
                         </div>
                     );
@@ -281,7 +284,6 @@ export default function Game() {
             </Card>
         ));
     };
-    
     
     
 
@@ -302,7 +304,7 @@ export default function Game() {
                 className="w-14 h-14 bg-teal-50 rounded-lg shadow-md flex flex-col items-center justify-center hover:bg-teal-100"
                 variant="outline"
             >
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center flex-wrap">
                     <Image 
                         src={FRUITS[icon as FruitType]}  // Đường dẫn ảnh
                         alt={fruit}  // Mô tả ảnh
@@ -343,13 +345,13 @@ export default function Game() {
             <Dialog open={showNotification} onOpenChange={setShowNotification}>
                 <DialogContent>
                     <DialogTitle></DialogTitle>
-                    <div className="p-6">
+                    <div className="flex-1 flex-2">
                         <h2 className="text-2xl font-bold mb-4">Kết thúc 2 lượt</h2>
                         <p className="mb-4">
                             Bạn đã hoàn thành 2 lượt chơi. Hãy chuẩn bị cho 2 lượt tiếp theo!
                         </p>
                         <Button onClick={() => setShowNotification(false)}>
-                            Tiếp tục
+                            Tiếp theo
                         </Button>
                     </div>
                 </DialogContent>
@@ -359,35 +361,40 @@ export default function Game() {
                 <DialogContent>
                     <DialogTitle></DialogTitle>
                     <div className="p-6">
-                        <h2 className="text-2xl font-bold mb-4">Kết thúc lượt {gameState.currentRound - 1}</h2>
-                        <p className="mb-4">
-                            Bạn đã hoàn thành lượt chơi. Hãy chuẩn bị cho lượt tiếp theo!
+                        
+                        <p className="text-center text-lg">Bạn đã hoàn thành lượt này</p>
+                        <p className="mb-4 text-center text-lg">
+                            Bấm tiếp tục để đến lượt tiếp theo
                         </p>
-                        <Button onClick={() => {
-                            setShowRoundNotification(false);
-                            if (gameState.currentRound > gameState.totalRounds) {
-                                setGameState(prev => ({ ...prev, gameStatus: 'finished' }));
-                            }
-                        }}>
-                            {gameState.currentRound > gameState.totalRounds ? 'Xem kết quả' : 'Lượt tiếp theo'}
-                        </Button>
+                        <div className="flex justify-center">
+                            <Button className="font-bold bg-yellow-50" onClick={() => {
+                                setShowRoundNotification(false);
+                                if (gameState.currentRound > gameState.totalRounds) {
+                                    setGameState(prev => ({ ...prev, gameStatus: 'finished' }));
+                                }
+                            }}>
+                                {gameState.currentRound > gameState.totalRounds ? 'Xem kết quả' : 'Tiếp tục'}
+                            </Button>
+                        </div>
                     </div>
                 </DialogContent>
             </Dialog>
 
             {gameState.gameStatus === 'playing' && !showRoundNotification && (
                 <div className="flex flex-col top-0 items-center gap-8 w-full">
-                    <div className="w-full sm:w-[450px] h-auto sm:h-[600px] overflow-y-auto border border-gray-300 p-4 rounded-md">
-                        <div className="flex flex-wrap gap-4 justify-center max-w-3xl">
+                    <div className="w-full flex-1 flex-2 overflow-y-auto border border-gray-300 p-4 rounded-md">
+                        <div className="grid grid-cols-4 gap-4 items-center justify-center max-w-3xl">
                             {renderCards()}
                         </div>
                     </div>
                     
-                    <div className="fixed bottom-8 flex gap-4 bg-white p-2 shadow-lg rounded-md">
-                        <div className="text-base top-0 mt-4">
+                    <div className="fixed bottom-4 left-6 right-6 flex flex-col items-center gap-4 bg-white p-2 shadow-lg rounded-md">
+                        <div className="flex gap-4">
+                            {renderFruitButtons()}
+                        </div>
+                        <div className="text-xl font-bold mt-2 items-center justify-center">
                             Lượt {gameState.currentRound}/{gameState.totalRounds}
                         </div>
-                        {renderFruitButtons()}
                     </div>
                 </div>
             )}
@@ -434,9 +441,9 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
                 <thead>
                     <tr className="bg-gray-100">
                         <th className="p-2 border">Lượt chơi</th>
-                        <th className="p-2 border">Fruit đúng</th>
+                        <th className="p-2 border">Loại trái cây đúng</th>
                         <th className="p-2 border">Thời gian phản ứng</th>
-                        <th className="p-2 border">Kết quả của mỗi lượt chơi</th>
+                        <th className="p-2 border">Đạt yêu cầu</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -471,7 +478,7 @@ const RenderResults = ({ gameState, setShowRules }: { gameState: GameState, setS
 
             <footer className="mt-8 text-center">
                 <p className="text-sm text-gray-500">
-                    &copy; {new Date().getFullYear()} zunohoang. All rights reserved.
+                    Tâm lý học Nhân thức
                 </p>
             </footer>
         </div>

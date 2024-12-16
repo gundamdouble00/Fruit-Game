@@ -8198,5 +8198,4795 @@
     ],
     "id": 1734247230544,
     "createdAt": "2024-12-15T07:20:30.544Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734250799642,
+    "createdAt": "2024-12-15T08:19:59.642Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "eggplant",
+        "reactionTime": 0.431,
+        "success": true,
+        "msg": "Bạn đã bỏ lỡ 1 trái cây đã đủ 5 quả trước đó",
+        "bgColor": "bg-yellow-100"
+      }
+    ],
+    "id": 1734250939903,
+    "createdAt": "2024-12-15T08:22:19.903Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "eggplant",
+        "reactionTime": 0.431,
+        "success": true,
+        "msg": "Bạn đã bỏ lỡ 1 trái cây đã đủ 5 quả trước đó",
+        "bgColor": "bg-yellow-100"
+      }
+    ],
+    "id": 1734250939940,
+    "createdAt": "2024-12-15T08:22:19.940Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "greenApple",
+        "reactionTime": 1.848,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": 0.066,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      }
+    ],
+    "id": 1734251514625,
+    "createdAt": "2024-12-15T08:31:54.625Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": null,
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      }
+    ],
+    "id": 1734252039058,
+    "createdAt": "2024-12-15T08:40:39.058Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "grape",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734253949745,
+    "createdAt": "2024-12-15T09:12:29.745Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734350798076,
+    "createdAt": "2024-12-16T12:06:38.076Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734350846509,
+    "createdAt": "2024-12-16T12:07:26.509Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734350857817,
+    "createdAt": "2024-12-16T12:07:37.817Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "grape",
+        "reactionTime": 1.846,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734350924032,
+    "createdAt": "2024-12-16T12:08:44.032Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "grape",
+        "reactionTime": 1.846,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Hong đúng Fruit nha",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734350945724,
+    "createdAt": "2024-12-16T12:09:05.724Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351085938,
+    "createdAt": "2024-12-16T12:11:25.938Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Bạn đã hết thời gian phản ứng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351135541,
+    "createdAt": "2024-12-16T12:12:15.541Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351180713,
+    "createdAt": "2024-12-16T12:13:00.713Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351188631,
+    "createdAt": "2024-12-16T12:13:08.631Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351208564,
+    "createdAt": "2024-12-16T12:13:28.564Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 3,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734351318369,
+    "createdAt": "2024-12-16T12:15:18.369Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 5,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734352158342,
+    "createdAt": "2024-12-16T12:29:18.342Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "grape",
+        "reactionTime": 1.847,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 11,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734352471849,
+    "createdAt": "2024-12-16T12:34:31.849Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "grape",
+        "reactionTime": 1.847,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 11,
+        "fruit": "banana",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "grape",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "eggplant",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734352501215,
+    "createdAt": "2024-12-16T12:35:01.215Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358134551,
+    "createdAt": "2024-12-16T14:08:54.551Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358381230,
+    "createdAt": "2024-12-16T14:13:01.230Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358475591,
+    "createdAt": "2024-12-16T14:14:35.591Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358493435,
+    "createdAt": "2024-12-16T14:14:53.435Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358531138,
+    "createdAt": "2024-12-16T14:15:31.138Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358639541,
+    "createdAt": "2024-12-16T14:17:19.541Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358764502,
+    "createdAt": "2024-12-16T14:19:24.502Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734358829624,
+    "createdAt": "2024-12-16T14:20:29.624Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      }
+    ],
+    "id": 1734359603373,
+    "createdAt": "2024-12-16T14:33:23.373Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734359971125,
+    "createdAt": "2024-12-16T14:39:31.125Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734359980925,
+    "createdAt": "2024-12-16T14:39:40.925Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 10,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734360199934,
+    "createdAt": "2024-12-16T14:43:19.934Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 10,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734360199946,
+    "createdAt": "2024-12-16T14:43:19.946Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 10,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734360234321,
+    "createdAt": "2024-12-16T14:43:54.321Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 10,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 12,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734360236490,
+    "createdAt": "2024-12-16T14:43:56.490Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": null,
+        "reactionTime": 5000,
+        "success": false,
+        "msg": "Quá 20 lá bài",
+        "bgColor": "bg-gray-100"
+      },
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734360422905,
+    "createdAt": "2024-12-16T14:47:02.905Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "strawberry",
+        "reactionTime": 2.977,
+        "success": false,
+        "msg": "Quá số lượng trái cây",
+        "bgColor": "bg-yellow-100"
+      },
+      {
+        "round": 7,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363441637,
+    "createdAt": "2024-12-16T15:37:21.637Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": 1.518,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363725307,
+    "createdAt": "2024-12-16T15:42:05.307Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": 1.518,
+        "success": true,
+        "msg": "Đúng",
+        "bgColor": "bg-green-100"
+      },
+      {
+        "round": 8,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "banana",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "grape",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "eggplant",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "strawberry",
+        "reactionTime": 5,
+        "success": false,
+        "msg": "Quá 5s sau khi xuất hiện tổng lá 5đ",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363827932,
+    "createdAt": "2024-12-16T15:43:47.932Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363860812,
+    "createdAt": "2024-12-16T15:44:20.812Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363860848,
+    "createdAt": "2024-12-16T15:44:20.848Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363873261,
+    "createdAt": "2024-12-16T15:44:33.261Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363887226,
+    "createdAt": "2024-12-16T15:44:47.226Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363904847,
+    "createdAt": "2024-12-16T15:45:04.847Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363906921,
+    "createdAt": "2024-12-16T15:45:06.921Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363912145,
+    "createdAt": "2024-12-16T15:45:12.145Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 6,
+        "fruit": "banana",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 7,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 8,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 9,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 10,
+        "fruit": "strawberry",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 11,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 12,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 13,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 14,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 15,
+        "fruit": "greenApple",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363915789,
+    "createdAt": "2024-12-16T15:45:15.789Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363929836,
+    "createdAt": "2024-12-16T15:45:29.836Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363941415,
+    "createdAt": "2024-12-16T15:45:41.415Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363956791,
+    "createdAt": "2024-12-16T15:45:56.791Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363967450,
+    "createdAt": "2024-12-16T15:46:07.450Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363971593,
+    "createdAt": "2024-12-16T15:46:11.593Z"
+  },
+  {
+    "round": [
+      {
+        "round": 1,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 2,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 3,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 4,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      },
+      {
+        "round": 5,
+        "fruit": "eggplant",
+        "reactionTime": null,
+        "success": false,
+        "msg": "Không đúng",
+        "bgColor": "bg-red-100"
+      }
+    ],
+    "id": 1734363978113,
+    "createdAt": "2024-12-16T15:46:18.113Z"
   }
 ]
