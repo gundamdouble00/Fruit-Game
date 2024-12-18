@@ -331,7 +331,7 @@ export default function Game({language}: GameProps) {
 
             // Hiển thị thông báo sau mỗi lượt
             if (newState.currentRound <= newState.totalRounds) {
-                setShowRoundNotification(true);
+              setShowRoundNotification(true);
             }
             return newState;
         })
@@ -589,7 +589,7 @@ const RenderResults = ({
                             {language === 'vi' ? texts.vi.gameRound : texts.en.gameRound}
                         </th>
                         <th className="p-2 border">
-                            {language === 'vi' ? texts.vi.correctAnswer : texts.en.correctAnswer}
+                            {language === 'vi' ? texts.vi.fruitType : texts.en.fruitType}
                         </th>
                         <th className="p-2 border">
                             {/* Thời gian phản ứng */}
