@@ -321,7 +321,7 @@ export default function Game({language}: GameProps) {
                         // msg = "Bạn đã bỏ qua một trái cây trước đấy đủ 5đ"
                         msg = (language === 'vi' ? texts.vi.missAnswer : texts.en.missAnswer)
                         bgColor = "bg-yellow-100"
-                        reactionTime = (now - TimeAppearance) / 1000
+                        reactionTime = (Temp > 5 ? Temp - 5 : Temp)
                     }
                     if (Fruits !== 5) {
                         // msg = "Không đúng"
