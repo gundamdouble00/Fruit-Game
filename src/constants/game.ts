@@ -6,7 +6,7 @@ export const FRUITS: Record<FruitType, string> = {
     eggplant: '/assets/fruits/eggplant1.png', //eggplant: '🍆',
     banana: '/assets/fruits/banana1.png', //banana: '🍌',
     strawberry: '/assets/fruits/strawberry2.png', //strawberry: '🍓',
-    greenApple: '/assets/fruits/greenapple2.png', //greenApple: '🍏',
+    greenApple: '/assets/fruits/greenapple1.png', //greenApple: '🍏',
 }
 
 export const ROUND_OPTIONS = [5, 10, 15]
