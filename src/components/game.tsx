@@ -322,8 +322,7 @@ export default function Game({language}: GameProps) {
                         msg = (language === 'vi' ? texts.vi.missAnswer : texts.en.missAnswer)
                         bgColor = "bg-yellow-100"
                         reactionTime = (Temp > 5 ? Temp - 5 : Temp)
-                    }
-                    if (Fruits !== 5) {
+                    } else {
                         // msg = "Không đúng"
                         msg = (language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer)
                         reactionTime = Temp
