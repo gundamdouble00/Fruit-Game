@@ -119,9 +119,10 @@ export default function Game({language}: GameProps) {
                             gameSt = 'finished';
                         }
                         if (prev.cards.length === 20) {
-                            // if (prev.currentRound < prev.totalRounds) {
-                            //     setShowRoundNotification(true);
-                            // }
+                            if (prev.currentRound < prev.totalRounds) {
+                                setShowRoundNotification(true);
+                            }
+                            
                             return {
                                 ...prev,
                                 cards: [],
@@ -154,9 +155,10 @@ export default function Game({language}: GameProps) {
                         const now = Date.now();
                         for (const [fruit, time] of fruitTime.entries()) {
                             if ((now - time) > REACTION_TIME_LIMIT) {
-                                // if (prev.currentRound < prev.totalRounds) {
-                                //     setShowRoundNotification(true);
-                                // }
+                                if (prev.currentRound < prev.totalRounds) {
+                                    setShowRoundNotification(true);
+                                }
+
                                 return {
                                     ...prev,
                                     cards: [],
