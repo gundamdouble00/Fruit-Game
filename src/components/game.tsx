@@ -37,10 +37,20 @@ const texts = {
 
       correctAnswer: 'Đúng',
       wrongAnswer: 'Không đúng',
-      missAnswer: 'Bạn đã bỏ qua một trái cây trước đấy đủ 5đ', 
+      missAnswer: 'Bạn đã bỏ qua một trái cây trước đấy đủ 5', 
       larger: 'Quá số lượng trái cây',
       noAnswer: 'Không có đáp án', 
-      outOf5s: 'Quá 5s sau khi xuất hiện tổng lá 5đ', 
+      outOf5s: 'Quá 5s sau khi xuất hiện tổng lá là 5', 
+
+      explainCorrect: 'Người chơi chọn đúng trái cây và chọn trong 5 giây.',
+      explainWrong1: 'Chọn sai loại trái cây.',
+      explainWrong2: 'Chưa đạt số lượng trái cây.',
+
+      explainOutOf5s: 'Quá 5s sau khi xuất hiện tổng lá là 5.',
+
+      explainLarger: 'Quá số lượng trái cây.', 
+      explainMiss: 'Bạn đã bỏ qua một loại trái cây trước đấy đủ 5.',
+      explainNoAnswer: 'Sau 20 thẻ bài mà không có một loại trái cây nào có tổng là 5, lượt chơi đó kết thúc.', 
 
       playAgain: 'Chơi lại', 
     },
@@ -52,7 +62,7 @@ const texts = {
           If there are more than 1 type of fruit with a quantity of 5, choose the one that appears first.
         `,
         numsRounds: 'Choose the number of rounds you want to play', 
-        round: 'Round',
+        round: 'Rounds',
         roundNotification1: 'You have completed this round',
         roundNotification2: 'Press "Continue" to go to the next round',
         continue: 'Continue',  
@@ -70,6 +80,16 @@ const texts = {
         larger: 'Over 5',
         noAnswer: 'No answer',
         outOf5s: 'Overtime', 
+
+        explainCorrect: 'You selected the correct fruit within the allotted time (Under 5 seconds).',
+        explainWrong1: 'You selected the wrong type of fruit.',
+        explainWrong2: 'The fruit you selected are not exactly 5.',
+
+        explainOutOf5s: 'After 5 seconds, if you have not identified a fruit type that sums to 5, you lose.',
+
+        explainLarger: 'The fruit you selected exceeds 5 in total.', 
+        explainMiss: 'You missed another fruit that added up to 5.',
+        explainNoAnswer: 'After 20 cards, if no fruit combination adds up to 5, the round ends.', 
 
         playAgain: 'Play Again',
     },
@@ -254,30 +274,36 @@ export default function Game({language}: GameProps) {
                 reactionTime = -1, 
                 success = false, 
                 msg = (language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer), 
-                bgColor = "bg-red-100"; 
+                bgColor = "bg-red-100",
+                flagFirstCard: boolean = false, 
+                flagAnswer: boolean = false; 
 
             prev.cards.forEach(card => {
-                if (reactionTime == -1) {
+                if (flagFirstCard === false) {
+                    flagFirstCard = true
                     reactionTime = (now - card.time) / 1000
                 }
                 fruitCounts.set(card.fruit, (fruitCounts.get(card.fruit) || 0) + card.count);
                 if (fruitCounts.get(card.fruit) === TARGET_SUM) {
                     fruitTime.set(card.fruit, card.time);
-                    if (TimeAppearance == -1) {
+                    if (flagAnswer === false) {
                         TimeAppearance = card.time;
                         Answer = card.fruit;
+                        flagAnswer = true
                     } 
                 }
             });
 
             const Temp: number = (now - TimeAppearance) / 1000
+            
             if (selectedFruit === Answer) {
                 if (fruitCounts.get(selectedFruit) > 5) {
                     // msg = "Quá số lượng trái cây"
                     msg = (language === 'vi' ? texts.vi.larger : texts.en.larger)
                     bgColor = "bg-yellow-100"
                     reactionTime = Temp
-                } else {
+                } 
+                if (fruitCounts.get(selectedFruit) === 5) {
                     if (Temp <= 5) {
                         success = true;
                         // msg = "Đúng"
@@ -288,18 +314,19 @@ export default function Game({language}: GameProps) {
                 }
             } 
 
-            if (selectedFruit != Answer) {
+            if (selectedFruit !== Answer) {
                 if (Answer !== undefined) {
                     const Fruits = fruitCounts.get(selectedFruit);
-                    if (Fruits == 5) {
+                    if (Fruits === 5) {
                         // msg = "Bạn đã bỏ qua một trái cây trước đấy đủ 5đ"
                         msg = (language === 'vi' ? texts.vi.missAnswer : texts.en.missAnswer)
                         bgColor = "bg-yellow-100"
-                        reactionTime = Temp
+                        reactionTime = (now - TimeAppearance) / 1000
                     }
-                    if (Fruits < 5) {
+                    if (Fruits !== 5) {
                         // msg = "Không đúng"
                         msg = (language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer)
+                        reactionTime = Temp
                     }
                     // selectedFruit = Answer
                 }
@@ -575,6 +602,119 @@ const RenderResults = ({
         saveData();
     }, [saveData]);
 
+
+    let Explaination = null
+    if (language === 'vi') {
+        Explaination = (
+            <div className="border mt-4">
+                <div className="top-12">
+                    <p className="text-left ml-4">
+                        <span className="text-green-500 font-semibold">
+                            {language === 'vi' ? texts.vi.correctAnswer : texts.en.correctAnswer} 
+                        </span>
+                        <span className="mr-2 text-green-500 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainCorrect : texts.en.explainCorrect} 
+                    </p>
+                </div>
+                <div className="ml-4">
+                    <p className="text-red-300 font-semibold text-left">
+                        {language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer}:
+                    </p>
+                    <p className="ml-8 text-left">
+                        + {language === 'vi' ? texts.vi.explainWrong1 : texts.vi.explainWrong1}
+                    </p>
+                    <p className="ml-8 text-left">
+                        + {language === 'vi' ? texts.vi.explainWrong2 : texts.vi.explainWrong2}
+                    </p>
+                </div>
+
+                <div className="text-left font-semibold text-red-300 ml-4">
+                    {language === 'vi' ? texts.vi.explainOutOf5s : texts.en.explainOutOf5s}
+                </div>
+
+                <div className="text-left font-semibold text-yellow-400 ml-4">
+                    {language === 'vi' ? texts.vi.explainLarger : texts.en.explainLarger}
+                </div>
+                <div className="text-left font-semibold ml-4 text-yellow-400">
+                    {language === 'vi' ? texts.vi.explainMiss : texts.en.explainMiss}
+                </div>
+                <div className="top-12">
+                    <p className="text-left ml-4">
+                        <span className="text-gray-500 font-semibold">
+                            {language === 'vi' ? texts.vi.noAnswer : texts.en.noAnswer}
+                        </span>
+                        <span className="mr-2 text-gray-500 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainNoAnswer : texts.en.explainNoAnswer}
+                    </p>
+                </div>
+            </div>
+        );
+    } else {
+        Explaination = (
+            <div className="border mt-4">
+                <div className="top-12">
+                    <p className="text-left ml-4">
+                        <span className="text-green-500 font-semibold">
+                            {language === 'vi' ? texts.vi.correctAnswer : texts.en.correctAnswer} 
+                        </span>
+                        <span className="mr-2 text-green-500 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainCorrect : texts.en.explainCorrect} 
+                    </p>
+                </div>
+
+                <div className="ml-4">
+                    <p className="text-left">
+                        <span className="text-red-300 font-semibold">
+                            {language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer} 
+                        </span>
+                        <span className="mr-2 text-red-300 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainWrong1 : texts.en.explainWrong1} 
+                    </p>
+                </div>
+
+                <div className="ml-4">
+                    <p className="text-left">
+                        <span className="text-red-300 font-semibold">
+                            {language === 'vi' ? texts.vi.outOf5s : texts.en.outOf5s} 
+                        </span>
+                        <span className="mr-2 text-red-300 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainWrong1 : texts.en.explainOutOf5s} 
+                    </p>
+                </div>
+
+                <div className="ml-4">
+                    <p className="text-left">
+                        <span className="text-yellow-400 font-semibold">
+                            {language === 'vi' ? texts.vi.wrongAnswer : texts.en.larger} 
+                        </span>
+                        <span className="mr-2 text-yellow-400 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainWrong1 : texts.en.explainLarger} 
+                    </p>
+                </div>
+
+                <div className="ml-4">
+                    <p className="text-left">
+                        <span className="text-yellow-400 font-semibold">
+                            {language === 'vi' ? texts.vi.wrongAnswer : texts.en.missAnswer} 
+                        </span>
+                        <span className="mr-2 text-yellow-400 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainWrong1 : texts.en.explainMiss} 
+                    </p>
+                </div>
+
+                <div className="ml-4">
+                    <p className="text-left">
+                        <span className="text-gray-500 font-semibold">
+                            {language === 'vi' ? texts.vi.wrongAnswer : texts.en.noAnswer} 
+                        </span>
+                        <span className="mr-2 text-gray-500 font-semibold">:</span>
+                        {language === 'vi' ? texts.vi.explainWrong1 : texts.en.explainNoAnswer} 
+                    </p>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="w-full max-w-2xl mx-auto mt-8">
             
@@ -627,12 +767,14 @@ const RenderResults = ({
                 </tbody>
             </table>
 
+            {Explaination}
+
             <Button onClick={() => setShowRules(true)} className="mt-4 bg-sky-600 text-white hover:bg-sky-500">
                 {language === 'vi' ? texts.vi.playAgain : texts.en.playAgain}
             </Button>
 
-            <footer className="mt-8 text-center">
-                <p className="text-sm text-gray-500">
+            <footer className="mt-8 text-center mb-8">
+                <p className="text-sm text-gray-500 font-medium">
                     Tâm lý học Nhận thức - Cognitive Psychology
                 </p>
             </footer>
