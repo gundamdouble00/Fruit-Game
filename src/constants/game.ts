@@ -2,11 +2,11 @@ import { FruitType } from '../types/game'
 
 
 export const FRUITS: Record<FruitType, string> = {
-    grape: '/assets/fruits/grape.png', //grape: '🍇',
-    eggplant: '/assets/fruits/eggplant.png', //eggplant: '🍆',
-    banana: '/assets/fruits/banana.png', //banana: '🍌',
-    strawberry: '/assets/fruits/strawberry1.png', //strawberry: '🍓',
-    greenApple: '/assets/fruits/greenapple.png', //greenApple: '🍏',
+    grape: '/assets/fruits/grape1.png', //grape: '🍇',
+    eggplant: '/assets/fruits/eggplant1.png', //eggplant: '🍆',
+    banana: '/assets/fruits/banana1.png', //banana: '🍌',
+    strawberry: '/assets/fruits/strawberry2.png', //strawberry: '🍓',
+    greenApple: '/assets/fruits/greenapple2.png', //greenApple: '🍏',
 }
 
 export const ROUND_OPTIONS = [5, 10, 15]
