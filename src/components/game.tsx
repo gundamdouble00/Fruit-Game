@@ -325,7 +325,7 @@ export default function Game({language}: GameProps) {
                     } else {
                         // msg = "Không đúng"
                         msg = (language === 'vi' ? texts.vi.wrongAnswer : texts.en.wrongAnswer)
-                        reactionTime = Temp
+                        reactionTime = (Temp > 5 ? Temp - 5 : Temp)
                     }
                     // selectedFruit = Answer
                 }

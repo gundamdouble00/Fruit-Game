@@ -1,6 +1,5 @@
 import { FruitType } from '../types/game'
 
-
 export const FRUITS: Record<FruitType, string> = {
     grape: '/assets/fruits/grape1.png', //grape: '🍇',
     eggplant: '/assets/fruits/eggplant1.png', //eggplant: '🍆',
