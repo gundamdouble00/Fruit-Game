@@ -36,12 +36,12 @@ body {
   }
 
   .card {
-    width: 90% !important; 
+    width: 90% !important;
     height: auto !important;
   }
 
   .card img {
-      width: 80% !important; /* Thu nhỏ kích thước trái cây */
-      height: auto !important;
+    width: 80% !important; /* Thu nhỏ kích thước trái cây */
+    height: auto !important;
   }
 }

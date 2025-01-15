@@ -8,9 +8,9 @@
 //   )
 // }
 
-import Head from 'next/head';
+import Head from "next/head";
 // import Game from '@/components/game';
-import GameStartPage from '@/components/welcome';
+import GameStartPage from "@/components/welcome";
 
 export default function HomePage() {
   return (
